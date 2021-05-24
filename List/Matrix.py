@@ -8,4 +8,9 @@ b = [[7,4,1],
 result = [[0,0,0],
           [0,0,0],
           [0,0,0]]
-if
+for i in range(len(a)):
+    for j in range(len(a[0])):
+        result[i][j] = a[i][j] + b[i][j]
+
+for r in result:
+    print(list(r))
